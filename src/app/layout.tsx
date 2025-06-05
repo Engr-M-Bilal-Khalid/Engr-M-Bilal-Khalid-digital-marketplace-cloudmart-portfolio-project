@@ -9,7 +9,9 @@ import { CartProvider } from '@/context/CartContext';
 import { SessionProvider } from '@/context/SessionContext';
 
 const poppins = Poppins({
-  weight: '400'
+  subsets: ['latin'], 
+  weight: ['400', '600'], 
+  preload: true,
 });
 
 
