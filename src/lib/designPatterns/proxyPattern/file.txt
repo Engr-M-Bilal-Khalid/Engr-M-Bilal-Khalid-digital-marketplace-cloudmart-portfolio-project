@@ -1,0 +1,1 @@
+Proxy pattern implemented at src/middleware.ts 
