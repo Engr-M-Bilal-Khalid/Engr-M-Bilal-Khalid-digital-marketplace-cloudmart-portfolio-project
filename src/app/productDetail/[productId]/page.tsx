@@ -66,10 +66,11 @@ export default function ProductDetailPage() {
                 setError(null);
 
                 const response = await fetch(`/api/productDetail/${productId}`, {
-                    method: "GET",
+                    method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
+                    body:JSON.stringify({productId})
                 });
 
                 const data = await response.json();
