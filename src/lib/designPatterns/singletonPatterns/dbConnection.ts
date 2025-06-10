@@ -7,7 +7,7 @@ const config: sql.config = {
     server: process.env.DB_SERVER || 'localhost',
     port: parseInt(process.env.DB_PORT || '1433'),
     options: {
-      encrypt: false,
+      encrypt: true,
       trustServerCertificate: true,
       connectTimeout: 30000,
     },
