@@ -71,7 +71,6 @@ export const Navbar = ({ initialSessionToken, userId, userRole }: NavbarProps) =
             // Store both in a cookie named 'cartSessionIds'
             const cookieValue = JSON.stringify({ cartId, sessionId });
             document.cookie = `cartSessionIds=${encodeURIComponent(cookieValue)}; path=/; max-age=604800;`;
-            successNotifier.notify(`Session Id created as no user LogIn!`)
         }
     }
     const getCartSessionIds = () => {
